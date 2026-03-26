@@ -1,19 +1,16 @@
-#include <cmath>
 #include <iostream>
 #include "portaudio.h"
 #include "PitchShifter.h"
+#include "Mixer.h"
 
-constexpr double kPi = 3.14159265358979323846;
 constexpr int kSampleRate = 44100;
-constexpr int kFramesPerBuffer = 256;
-constexpr float kAmplitude = 0.2f;
-constexpr double kFrequency = 440.0;
+constexpr int kFramesPerBuffer = 1024;
 
 struct AudioState {
-    PitchShifter shifter;
+    Mixer harmonizer;
     std::vector<float> monoOut;
 
-    AudioState() : shifter(kSampleRate, kFramesPerBuffer),
+    AudioState() : harmonizer(kSampleRate, kFramesPerBuffer),
                    monoOut(kFramesPerBuffer, 0.0f) {}
 };
 
@@ -26,28 +23,6 @@ static void checkPaError(PaError err, const char* step)
     }
 }
 
-// static int passthroughCallback(const void* inputBuffer,
-//                          void* outputBuffer,
-//                          unsigned long framesPerBuffer,
-//                          const PaStreamCallbackTimeInfo*,
-//                          PaStreamCallbackFlags,
-//                          void* userData)
-// {
-//     const auto* in = static_cast<const float*>(inputBuffer);
-//     auto* out = static_cast<float*>(outputBuffer);
-//     auto* state = static_cast<SineState*>(userData);
-
-//     for (unsigned long i = 0; i < framesPerBuffer; ++i)
-//     {
-//         // stereo output
-//         float sample = *in++;
-//         *out++ = sample;
-//         *out++ = sample;
-//     }
-
-//     return paContinue;
-// }
-
 static int audioCallback(const void* inputBuffer,
                          void* outputBuffer,
                          unsigned long framesPerBuffer,
@@ -59,7 +34,7 @@ static int audioCallback(const void* inputBuffer,
     const auto* in = static_cast<const float*>(inputBuffer);
     auto* out = static_cast<float*>(outputBuffer);
 
-    state->shifter.processMono(in, state->monoOut.data(),
+    state->harmonizer.processMono(in, state->monoOut.data(),
                                static_cast<int>(framesPerBuffer));
 
     for (unsigned long i = 0; i < framesPerBuffer; ++i) {
