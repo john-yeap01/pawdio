@@ -1,0 +1,104 @@
+[
+{
+  "directory": "/Users/at/code/pawdio/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DPA_USE_COREAUDIO=1 -I/Users/at/code/pawdio/3rdparty/portaudio/include -I/Users/at/code/pawdio/3rdparty/portaudio/src/common -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk -o CMakeFiles/pawdio.dir/src/main.cpp.o -c /Users/at/code/pawdio/src/main.cpp",
+  "file": "/Users/at/code/pawdio/src/main.cpp",
+  "output": "CMakeFiles/pawdio.dir/src/main.cpp.o"
+},
+{
+  "directory": "/Users/at/code/pawdio/build/3rdparty/portaudio",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -DPA_LITTLE_ENDIAN -DPA_USE_COREAUDIO=1 -Dportaudio_EXPORTS -I/Users/at/code/pawdio/3rdparty/portaudio/include -I/Users/at/code/pawdio/3rdparty/portaudio/src/common -I/Users/at/code/pawdio/3rdparty/portaudio/src/os/unix -I/Users/at/code/pawdio/3rdparty/portaudio/src/hostapi/coreaudio -g -std=gnu11 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk -fPIC -fPIC -o CMakeFiles/portaudio.dir/src/common/pa_allocation.c.o -c /Users/at/code/pawdio/3rdparty/portaudio/src/common/pa_allocation.c",
+  "file": "/Users/at/code/pawdio/3rdparty/portaudio/src/common/pa_allocation.c",
+  "output": "3rdparty/portaudio/CMakeFiles/portaudio.dir/src/common/pa_allocation.c.o"
+},
+{
+  "directory": "/Users/at/code/pawdio/build/3rdparty/portaudio",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -DPA_LITTLE_ENDIAN -DPA_USE_COREAUDIO=1 -Dportaudio_EXPORTS -I/Users/at/code/pawdio/3rdparty/portaudio/include -I/Users/at/code/pawdio/3rdparty/portaudio/src/common -I/Users/at/code/pawdio/3rdparty/portaudio/src/os/unix -I/Users/at/code/pawdio/3rdparty/portaudio/src/hostapi/coreaudio -g -std=gnu11 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk -fPIC -fPIC -o CMakeFiles/portaudio.dir/src/common/pa_converters.c.o -c /Users/at/code/pawdio/3rdparty/portaudio/src/common/pa_converters.c",
+  "file": "/Users/at/code/pawdio/3rdparty/portaudio/src/common/pa_converters.c",
+  "output": "3rdparty/portaudio/CMakeFiles/portaudio.dir/src/common/pa_converters.c.o"
+},
+{
+  "directory": "/Users/at/code/pawdio/build/3rdparty/portaudio",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -DPA_LITTLE_ENDIAN -DPA_USE_COREAUDIO=1 -Dportaudio_EXPORTS -I/Users/at/code/pawdio/3rdparty/portaudio/include -I/Users/at/code/pawdio/3rdparty/portaudio/src/common -I/Users/at/code/pawdio/3rdparty/portaudio/src/os/unix -I/Users/at/code/pawdio/3rdparty/portaudio/src/hostapi/coreaudio -g -std=gnu11 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk -fPIC -fPIC -o CMakeFiles/portaudio.dir/src/common/pa_cpuload.c.o -c /Users/at/code/pawdio/3rdparty/portaudio/src/common/pa_cpuload.c",
+  "file": "/Users/at/code/pawdio/3rdparty/portaudio/src/common/pa_cpuload.c",
+  "output": "3rdparty/portaudio/CMakeFiles/portaudio.dir/src/common/pa_cpuload.c.o"
+},
+{
+  "directory": "/Users/at/code/pawdio/build/3rdparty/portaudio",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -DPA_LITTLE_ENDIAN -DPA_USE_COREAUDIO=1 -Dportaudio_EXPORTS -I/Users/at/code/pawdio/3rdparty/portaudio/include -I/Users/at/code/pawdio/3rdparty/portaudio/src/common -I/Users/at/code/pawdio/3rdparty/portaudio/src/os/unix -I/Users/at/code/pawdio/3rdparty/portaudio/src/hostapi/coreaudio -g -std=gnu11 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk -fPIC -fPIC -o CMakeFiles/portaudio.dir/src/common/pa_debugprint.c.o -c /Users/at/code/pawdio/3rdparty/portaudio/src/common/pa_debugprint.c",
+  "file": "/Users/at/code/pawdio/3rdparty/portaudio/src/common/pa_debugprint.c",
+  "output": "3rdparty/portaudio/CMakeFiles/portaudio.dir/src/common/pa_debugprint.c.o"
+},
+{
+  "directory": "/Users/at/code/pawdio/build/3rdparty/portaudio",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -DPA_LITTLE_ENDIAN -DPA_USE_COREAUDIO=1 -Dportaudio_EXPORTS -I/Users/at/code/pawdio/3rdparty/portaudio/include -I/Users/at/code/pawdio/3rdparty/portaudio/src/common -I/Users/at/code/pawdio/3rdparty/portaudio/src/os/unix -I/Users/at/code/pawdio/3rdparty/portaudio/src/hostapi/coreaudio -g -std=gnu11 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk -fPIC -fPIC -o CMakeFiles/portaudio.dir/src/common/pa_dither.c.o -c /Users/at/code/pawdio/3rdparty/portaudio/src/common/pa_dither.c",
+  "file": "/Users/at/code/pawdio/3rdparty/portaudio/src/common/pa_dither.c",
+  "output": "3rdparty/portaudio/CMakeFiles/portaudio.dir/src/common/pa_dither.c.o"
+},
+{
+  "directory": "/Users/at/code/pawdio/build/3rdparty/portaudio",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -DPA_LITTLE_ENDIAN -DPA_USE_COREAUDIO=1 -Dportaudio_EXPORTS -I/Users/at/code/pawdio/3rdparty/portaudio/include -I/Users/at/code/pawdio/3rdparty/portaudio/src/common -I/Users/at/code/pawdio/3rdparty/portaudio/src/os/unix -I/Users/at/code/pawdio/3rdparty/portaudio/src/hostapi/coreaudio -g -std=gnu11 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk -fPIC -fPIC -o CMakeFiles/portaudio.dir/src/common/pa_front.c.o -c /Users/at/code/pawdio/3rdparty/portaudio/src/common/pa_front.c",
+  "file": "/Users/at/code/pawdio/3rdparty/portaudio/src/common/pa_front.c",
+  "output": "3rdparty/portaudio/CMakeFiles/portaudio.dir/src/common/pa_front.c.o"
+},
+{
+  "directory": "/Users/at/code/pawdio/build/3rdparty/portaudio",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -DPA_LITTLE_ENDIAN -DPA_USE_COREAUDIO=1 -Dportaudio_EXPORTS -I/Users/at/code/pawdio/3rdparty/portaudio/include -I/Users/at/code/pawdio/3rdparty/portaudio/src/common -I/Users/at/code/pawdio/3rdparty/portaudio/src/os/unix -I/Users/at/code/pawdio/3rdparty/portaudio/src/hostapi/coreaudio -g -std=gnu11 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk -fPIC -fPIC -o CMakeFiles/portaudio.dir/src/common/pa_process.c.o -c /Users/at/code/pawdio/3rdparty/portaudio/src/common/pa_process.c",
+  "file": "/Users/at/code/pawdio/3rdparty/portaudio/src/common/pa_process.c",
+  "output": "3rdparty/portaudio/CMakeFiles/portaudio.dir/src/common/pa_process.c.o"
+},
+{
+  "directory": "/Users/at/code/pawdio/build/3rdparty/portaudio",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -DPA_LITTLE_ENDIAN -DPA_USE_COREAUDIO=1 -Dportaudio_EXPORTS -I/Users/at/code/pawdio/3rdparty/portaudio/include -I/Users/at/code/pawdio/3rdparty/portaudio/src/common -I/Users/at/code/pawdio/3rdparty/portaudio/src/os/unix -I/Users/at/code/pawdio/3rdparty/portaudio/src/hostapi/coreaudio -g -std=gnu11 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk -fPIC -fPIC -o CMakeFiles/portaudio.dir/src/common/pa_ringbuffer.c.o -c /Users/at/code/pawdio/3rdparty/portaudio/src/common/pa_ringbuffer.c",
+  "file": "/Users/at/code/pawdio/3rdparty/portaudio/src/common/pa_ringbuffer.c",
+  "output": "3rdparty/portaudio/CMakeFiles/portaudio.dir/src/common/pa_ringbuffer.c.o"
+},
+{
+  "directory": "/Users/at/code/pawdio/build/3rdparty/portaudio",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -DPA_LITTLE_ENDIAN -DPA_USE_COREAUDIO=1 -Dportaudio_EXPORTS -I/Users/at/code/pawdio/3rdparty/portaudio/include -I/Users/at/code/pawdio/3rdparty/portaudio/src/common -I/Users/at/code/pawdio/3rdparty/portaudio/src/os/unix -I/Users/at/code/pawdio/3rdparty/portaudio/src/hostapi/coreaudio -g -std=gnu11 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk -fPIC -fPIC -o CMakeFiles/portaudio.dir/src/common/pa_stream.c.o -c /Users/at/code/pawdio/3rdparty/portaudio/src/common/pa_stream.c",
+  "file": "/Users/at/code/pawdio/3rdparty/portaudio/src/common/pa_stream.c",
+  "output": "3rdparty/portaudio/CMakeFiles/portaudio.dir/src/common/pa_stream.c.o"
+},
+{
+  "directory": "/Users/at/code/pawdio/build/3rdparty/portaudio",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -DPA_LITTLE_ENDIAN -DPA_USE_COREAUDIO=1 -Dportaudio_EXPORTS -I/Users/at/code/pawdio/3rdparty/portaudio/include -I/Users/at/code/pawdio/3rdparty/portaudio/src/common -I/Users/at/code/pawdio/3rdparty/portaudio/src/os/unix -I/Users/at/code/pawdio/3rdparty/portaudio/src/hostapi/coreaudio -g -std=gnu11 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk -fPIC -fPIC -o CMakeFiles/portaudio.dir/src/common/pa_trace.c.o -c /Users/at/code/pawdio/3rdparty/portaudio/src/common/pa_trace.c",
+  "file": "/Users/at/code/pawdio/3rdparty/portaudio/src/common/pa_trace.c",
+  "output": "3rdparty/portaudio/CMakeFiles/portaudio.dir/src/common/pa_trace.c.o"
+},
+{
+  "directory": "/Users/at/code/pawdio/build/3rdparty/portaudio",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -DPA_LITTLE_ENDIAN -DPA_USE_COREAUDIO=1 -Dportaudio_EXPORTS -I/Users/at/code/pawdio/3rdparty/portaudio/include -I/Users/at/code/pawdio/3rdparty/portaudio/src/common -I/Users/at/code/pawdio/3rdparty/portaudio/src/os/unix -I/Users/at/code/pawdio/3rdparty/portaudio/src/hostapi/coreaudio -g -std=gnu11 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk -fPIC -fPIC -o CMakeFiles/portaudio.dir/src/os/unix/pa_unix_hostapis.c.o -c /Users/at/code/pawdio/3rdparty/portaudio/src/os/unix/pa_unix_hostapis.c",
+  "file": "/Users/at/code/pawdio/3rdparty/portaudio/src/os/unix/pa_unix_hostapis.c",
+  "output": "3rdparty/portaudio/CMakeFiles/portaudio.dir/src/os/unix/pa_unix_hostapis.c.o"
+},
+{
+  "directory": "/Users/at/code/pawdio/build/3rdparty/portaudio",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -DPA_LITTLE_ENDIAN -DPA_USE_COREAUDIO=1 -Dportaudio_EXPORTS -I/Users/at/code/pawdio/3rdparty/portaudio/include -I/Users/at/code/pawdio/3rdparty/portaudio/src/common -I/Users/at/code/pawdio/3rdparty/portaudio/src/os/unix -I/Users/at/code/pawdio/3rdparty/portaudio/src/hostapi/coreaudio -g -std=gnu11 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk -fPIC -fPIC -o CMakeFiles/portaudio.dir/src/os/unix/pa_unix_util.c.o -c /Users/at/code/pawdio/3rdparty/portaudio/src/os/unix/pa_unix_util.c",
+  "file": "/Users/at/code/pawdio/3rdparty/portaudio/src/os/unix/pa_unix_util.c",
+  "output": "3rdparty/portaudio/CMakeFiles/portaudio.dir/src/os/unix/pa_unix_util.c.o"
+},
+{
+  "directory": "/Users/at/code/pawdio/build/3rdparty/portaudio",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -DPA_LITTLE_ENDIAN -DPA_USE_COREAUDIO=1 -Dportaudio_EXPORTS -I/Users/at/code/pawdio/3rdparty/portaudio/include -I/Users/at/code/pawdio/3rdparty/portaudio/src/common -I/Users/at/code/pawdio/3rdparty/portaudio/src/os/unix -I/Users/at/code/pawdio/3rdparty/portaudio/src/hostapi/coreaudio -g -std=gnu11 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk -fPIC -fPIC -o CMakeFiles/portaudio.dir/src/os/unix/pa_pthread_util.c.o -c /Users/at/code/pawdio/3rdparty/portaudio/src/os/unix/pa_pthread_util.c",
+  "file": "/Users/at/code/pawdio/3rdparty/portaudio/src/os/unix/pa_pthread_util.c",
+  "output": "3rdparty/portaudio/CMakeFiles/portaudio.dir/src/os/unix/pa_pthread_util.c.o"
+},
+{
+  "directory": "/Users/at/code/pawdio/build/3rdparty/portaudio",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -DPA_LITTLE_ENDIAN -DPA_USE_COREAUDIO=1 -Dportaudio_EXPORTS -I/Users/at/code/pawdio/3rdparty/portaudio/include -I/Users/at/code/pawdio/3rdparty/portaudio/src/common -I/Users/at/code/pawdio/3rdparty/portaudio/src/os/unix -I/Users/at/code/pawdio/3rdparty/portaudio/src/hostapi/coreaudio -g -std=gnu11 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk -fPIC -fPIC -o CMakeFiles/portaudio.dir/src/hostapi/coreaudio/pa_mac_core.c.o -c /Users/at/code/pawdio/3rdparty/portaudio/src/hostapi/coreaudio/pa_mac_core.c",
+  "file": "/Users/at/code/pawdio/3rdparty/portaudio/src/hostapi/coreaudio/pa_mac_core.c",
+  "output": "3rdparty/portaudio/CMakeFiles/portaudio.dir/src/hostapi/coreaudio/pa_mac_core.c.o"
+},
+{
+  "directory": "/Users/at/code/pawdio/build/3rdparty/portaudio",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -DPA_LITTLE_ENDIAN -DPA_USE_COREAUDIO=1 -Dportaudio_EXPORTS -I/Users/at/code/pawdio/3rdparty/portaudio/include -I/Users/at/code/pawdio/3rdparty/portaudio/src/common -I/Users/at/code/pawdio/3rdparty/portaudio/src/os/unix -I/Users/at/code/pawdio/3rdparty/portaudio/src/hostapi/coreaudio -g -std=gnu11 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk -fPIC -fPIC -o CMakeFiles/portaudio.dir/src/hostapi/coreaudio/pa_mac_core_blocking.c.o -c /Users/at/code/pawdio/3rdparty/portaudio/src/hostapi/coreaudio/pa_mac_core_blocking.c",
+  "file": "/Users/at/code/pawdio/3rdparty/portaudio/src/hostapi/coreaudio/pa_mac_core_blocking.c",
+  "output": "3rdparty/portaudio/CMakeFiles/portaudio.dir/src/hostapi/coreaudio/pa_mac_core_blocking.c.o"
+},
+{
+  "directory": "/Users/at/code/pawdio/build/3rdparty/portaudio",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -DPA_LITTLE_ENDIAN -DPA_USE_COREAUDIO=1 -Dportaudio_EXPORTS -I/Users/at/code/pawdio/3rdparty/portaudio/include -I/Users/at/code/pawdio/3rdparty/portaudio/src/common -I/Users/at/code/pawdio/3rdparty/portaudio/src/os/unix -I/Users/at/code/pawdio/3rdparty/portaudio/src/hostapi/coreaudio -g -std=gnu11 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk -fPIC -fPIC -o CMakeFiles/portaudio.dir/src/hostapi/coreaudio/pa_mac_core_utilities.c.o -c /Users/at/code/pawdio/3rdparty/portaudio/src/hostapi/coreaudio/pa_mac_core_utilities.c",
+  "file": "/Users/at/code/pawdio/3rdparty/portaudio/src/hostapi/coreaudio/pa_mac_core_utilities.c",
+  "output": "3rdparty/portaudio/CMakeFiles/portaudio.dir/src/hostapi/coreaudio/pa_mac_core_utilities.c.o"
+}
+]
