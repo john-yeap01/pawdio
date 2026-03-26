@@ -1,6 +1,7 @@
 #include <cmath>
 #include <iostream>
 #include "portaudio.h"
+#include "PitchShifter.h"
 
 constexpr double kPi = 3.14159265358979323846;
 constexpr int kSampleRate = 44100;
@@ -8,10 +9,12 @@ constexpr int kFramesPerBuffer = 256;
 constexpr float kAmplitude = 0.2f;
 constexpr double kFrequency = 440.0;
 
-struct SineState
-{
-    double phase = 0.0;
-    double phaseInc = 2.0 * kPi * kFrequency / static_cast<double>(kSampleRate);
+struct AudioState {
+    PitchShifter shifter;
+    std::vector<float> monoOut;
+
+    AudioState() : shifter(kSampleRate, kFramesPerBuffer),
+                   monoOut(kFramesPerBuffer, 0.0f) {}
 };
 
 static void checkPaError(PaError err, const char* step)
@@ -23,49 +26,46 @@ static void checkPaError(PaError err, const char* step)
     }
 }
 
-// static int audioCallback(const void*,
+// static int passthroughCallback(const void* inputBuffer,
 //                          void* outputBuffer,
 //                          unsigned long framesPerBuffer,
 //                          const PaStreamCallbackTimeInfo*,
 //                          PaStreamCallbackFlags,
 //                          void* userData)
 // {
+//     const auto* in = static_cast<const float*>(inputBuffer);
 //     auto* out = static_cast<float*>(outputBuffer);
 //     auto* state = static_cast<SineState*>(userData);
 
 //     for (unsigned long i = 0; i < framesPerBuffer; ++i)
 //     {
-//         float s = kAmplitude * static_cast<float>(std::sin(state->phase));
-
 //         // stereo output
-//         *out++ = s;
-//         *out++ = s;
-
-//         state->phase += state->phaseInc;
-//         if (state->phase >= 2.0 * kPi)
-//             state->phase -= 2.0 * kPi;
+//         float sample = *in++;
+//         *out++ = sample;
+//         *out++ = sample;
 //     }
 
 //     return paContinue;
 // }
 
-static int passthroughCallback(const void* inputBuffer,
+static int audioCallback(const void* inputBuffer,
                          void* outputBuffer,
                          unsigned long framesPerBuffer,
                          const PaStreamCallbackTimeInfo*,
                          PaStreamCallbackFlags,
                          void* userData)
 {
+    auto* state = static_cast<AudioState*>(userData);
     const auto* in = static_cast<const float*>(inputBuffer);
     auto* out = static_cast<float*>(outputBuffer);
-    auto* state = static_cast<SineState*>(userData);
 
-    for (unsigned long i = 0; i < framesPerBuffer; ++i)
-    {
-        // stereo output
-        float sample = *in++;
-        *out++ = sample;
-        *out++ = sample;
+    state->shifter.processMono(in, state->monoOut.data(),
+                               static_cast<int>(framesPerBuffer));
+
+    for (unsigned long i = 0; i < framesPerBuffer; ++i) {
+        float s = state->monoOut[i];
+        *out++ = s;
+        *out++ = s;
     }
 
     return paContinue;
@@ -74,19 +74,19 @@ static int passthroughCallback(const void* inputBuffer,
 int main()
 {
     PaStream* stream = nullptr;
-    SineState state;
+    AudioState state;
 
     checkPaError(Pa_Initialize(), "Pa_Initialize");
 
     checkPaError(
         Pa_OpenDefaultStream(
             &stream,
-            1,                  // no input channels
+            1,                  // 1 input channels
             2,                  // stereo output
             paFloat32,          // 32-bit floating point
             kSampleRate,
             kFramesPerBuffer,
-            passthroughCallback,
+            audioCallback,
             &state),
         "Pa_OpenDefaultStream");
 

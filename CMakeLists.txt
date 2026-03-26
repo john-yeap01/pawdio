@@ -5,7 +5,14 @@ set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 add_subdirectory(3rdparty/portaudio)
+add_subdirectory(3rdparty/stretch)
 
-add_executable(pawdio src/main.cpp)
+add_executable(pawdio
+    src/main.cpp
+)
 
-target_link_libraries(pawdio PRIVATE portaudio)
+target_link_libraries(pawdio
+    PRIVATE
+        portaudio
+        signalsmith-stretch
+)
